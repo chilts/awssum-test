@@ -1,0 +1,68 @@
+{
+    "name" : "awssum-test",
+    "description" : "Integration tests for AwsSum.",
+    "version" : "1.0.0",
+
+    "engines" : {
+        "node" : ">= 0.6.0"
+    },
+    "devDependencies" : {
+        "tap" : "0.4.x"
+    },
+    "dependencies" : {
+        "awssum"                         : "1.0.0-alpha",
+        "awssum-amazon"                  : "1.x",
+        "awssum-amazon-iam"              : "1.x",
+        "awssum-amazon-autoscaling"      : "1.x",
+        "awssum-amazon-imd"              : "1.x",
+        "awssum-amazon-cloudformation"   : "1.x",
+        "awssum-amazon-importexport"     : "1.x",
+        "awssum-amazon-cloudfront"       : "1.x",
+        "awssum-amazon-rds"              : "1.x",
+        "awssum-amazon-cloudsearch"      : "1.x",
+        "awssum-amazon-cloudwatch"       : "1.x",
+        "awssum-amazon-route53"          : "1.x",
+        "awssum-amazon-dynamodb"         : "1.x",
+        "awssum-amazon-s3"               : "1.x",
+        "awssum-amazon-ec2"              : "1.x",
+        "awssum-amazon-ses"              : "1.x",
+        "awssum-amazon-elasticache"      : "1.x",
+        "awssum-amazon-simpledb"         : "1.x",
+        "awssum-amazon-elasticbeanstalk" : "1.x",
+        "awssum-amazon-sns"              : "1.x",
+        "awssum-amazon-elb"              : "1.x",
+        "awssum-amazon-sqs"              : "1.x",
+        "awssum-amazon-emr"              : "1.x",
+        "awssum-amazon-storagegateway"   : "1.x",
+        "awssum-amazon-fps"              : "1.x",
+        "awssum-amazon-sts"              : "1.x",
+        "awssum-amazon-glacier"          : "1.x"
+    },
+    "scripts" : {
+        "test" : "tap test/*.js"
+    },
+
+    "homepage" : "https://awssum.io/",
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/awssum/awssum-test.git"
+    },
+    "bugs" : {
+        "url" : "http://github.com/awssum/awssum/issues",
+        "mail" : "andychilton@gmail.com"
+    },
+
+    "author" : {
+        "name" : "Andrew Chilton",
+        "email" : "andychilton@gmail.com",
+        "url" : "http://chilts.org/"
+    },
+    "contributors" : [],
+    "licenses" : [{
+        "type" : "MIT",
+        "url" : "http://github.com/appsattic/node-awssum/raw/master/LICENSE"
+    }],
+    "keywords" : [
+        "api", "apis", "webapi", "client"
+    ]
+}
