@@ -9,15 +9,24 @@ var print     = require('./lib/print.js');
 
 // ----------------------------------------------------------------------------
 
-dynamodb = new DynamoDB({
+var dynamodb1 = new DynamoDB({
     'accessKeyId'     : process.env.ACCESS_KEY_ID,
     'secretAccessKey' : process.env.SECRET_ACCESS_KEY,
     'awsAccountId'    : process.env.AWS_ACCOUNT_ID,
     'region'          : amazon.US_EAST_1,
 });
 
+var dynamodb2 = new DynamoDB({
+    'accessKeyId'     : process.env.ACCESS_KEY_ID,
+    'secretAccessKey' : process.env.SECRET_ACCESS_KEY,
+    'awsAccountId'    : process.env.AWS_ACCOUNT_ID,
+    'region'          : amazon.US_EAST_1,
+    'protocol'        : 'http',
+});
+
 // ----------------------------------------------------------------------------
 
-dynamodb.ListTables(print('ListTables'));
+dynamodb1.ListTables(print('ListTables (https)'));
+dynamodb2.ListTables(print('ListTables (http)'));
 
 // ----------------------------------------------------------------------------
